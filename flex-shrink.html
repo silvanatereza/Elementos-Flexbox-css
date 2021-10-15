@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNDAMENTOS- SHRINK</title>
+    <STyle>
+           .flex-container{
+        display: flex;
+        border: 1px solid black;
+        max-width: 350px;
+        margin-bottom: 10px;
+    }
+    .item{
+        background-color: hotpink;
+        font-size: 24px;
+        text-align: center;
+        margin: 5px;
+        
+        
+    }
+    .S-1{
+        flex-shrink: 1;
+    }
+    .fg-1{
+        flex-grow: 1;
+    }
+    .s-0{
+        flex-shrink: 0;
+        flex-basis: 100px;
+    }
+    .s-2{
+        flex-shrink: 2;
+        flex-basis: 100px;
+    }
+    .s-3{
+        flex-shrink: 3;
+        flex-basis: 100px;
+    }
+    </STyle>
+</head>
+<body>
+    <!--
+*FUNDAMENTOS DO CSS  FLEXBOX*
+=PROPRIEDADES RELACIONADAS AOS FLEX ITENS=
+
+PROPRIEDADE FLEX-SHRINK : É A PROPRIEDADE QUE ESTABELECE A CAPACIDADE DE REDUÇÃO OU 
+COMPRESSÃO DO TANHO DO UM ITEM -->
+
+    <h1>SHIRNK:1</h1>
+<div class="flex-container">
+    <div class="item s-1 fg-1">A</div>
+    <div class="item s-1 fg-1 ">B</div>
+    <div class="item s-1 fg-1">C</div>
+    <div class="item s-1 fg-1 ">D</div>
+    <div class="item s-1 fg-1 ">E</div>
+
+</div>
+<h1>SHIRNK:1</h1>
+<div class="flex-container">
+    <div class="item s-1 fg-1">A</div>
+    <div class="item s-1 fg-1 ">Lorem ipsum dolor sit </div>
+    <div class="item s-1 fg-1">C</div>
+    <div class="item s-1 fg-1 ">D</div>
+    
+
+</div>
+<h1>SHIRNK:0 /BASIS :100PX </h1>
+<div class="flex-container">
+    <div class="item s-0 fg-0">A</div>
+    <div class="item s-0 fg-0">Lorem ipsum dolor sit </div>
+    <div class="item s-0 fg-0">Lorem ipsum dolor sit</div>
+    <div class="item s-0 fg-0">D</div>
+    
+
+</div>
+<h1>SHIRNK: MIX /BASIS :100PX </h1>
+<div class="flex-container">
+    <div class="item s-1 fg-1">A</div>
+    <div class="item s-2 fg-1 ">Lorem ipsum dolor sit </div>
+    <div class="item s-2 fg-1">C</div>
+    <div class="item s-3 fg-1 ">D</div>
+    
+
+</div>
+    
+</body>
+</html>
