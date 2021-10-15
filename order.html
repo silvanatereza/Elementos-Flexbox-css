@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNDAMENTOS - ORDER</title>
+    <style>
+        .flex-container{
+            display: flex;
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+
+        }
+        .item{
+            flex: 1;
+            background-color: gold;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+            order: 0;
+        }
+        .O-1{
+            order: 1;
+        }
+        .o-2{
+            order: 2;
+        }
+        .o-3{
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <!--PROPRIEDADE ORDER: ESSA PRPRIEDADE VAI LIDAR DIRETAMENTE COM A ORDENAÇÃO DE NOSSO  ITENS-->
+    <h1>ORDER :0 </h1>
+    <div class="flex-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+
+    </div>
+    <body>
+        <h1>ORDER :DIFERENTES </h1>
+        <div class="flex-container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item o-3">4N</div>
+            <div class="item o-1">4M</div>
+    
+        </div>
+    
+</body>
+</html>
