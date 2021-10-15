@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNDAMENTOS - FLEX </title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+        }
+        .item{
+            background-color: chocolate;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        .flex-1{
+            flex: 1;
+            /* grow =1 , shrink = 1,basis = 0 */ 
+        }
+    
+        .flex-2{
+            flex: 2;
+            /* grow =1 , shrink = 1,basis = 0 */ 
+        }
+    </style>
+</head>
+<body>
+    <!--*FUNDAMENTOS DO CSS  FLEXBOX*
+=PROPRIEDADES RELACIONADAS AOS FLEX ITENS=
+
+PROPRIEDADE FLEX: ESTA PROPRIEDADE É UM ATALHO OU ABREVIAÇÃO DE ESCRITAS PARA AS PROPRIEDADES:
+GROW,SHRINK E BASIS 
+/* grow =1 , shrink = 1,basis = 0 */ -->
+    <h1>FLEX :1 </h1>
+    <div class="flex-container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-1">BBB</div>
+        <div class="item flex-1">CC</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">EF</div>
+
+    </div>
+    <h1>FLEX :  MIX </h1>
+    <div class="flex-container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-2">BBB</div>
+        <div class="item flex-2">CC</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">EF</div>
+
+    </div>
+    
+</body>
+</html>
